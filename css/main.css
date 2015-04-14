@@ -1,0 +1,62 @@
+.main {
+  width: 100%;
+  height: 100%;
+  background: #333333;
+}
+.main .clearfix {
+  *zoom: 1;
+}
+.main .clearfix:before,
+.main .clearfix:after {
+  display: table;
+  content: "";
+}
+.main .clearfix:after {
+  clear: both;
+}
+.main .content {
+  max-width: 1024px;
+  min-height: 350px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+.main .content .file {
+  position: relative;
+  z-index: 4;
+}
+.main .content .game {
+  width: 480px;
+  height: 500px;
+  position: relative;
+  z-index: 1;
+  display: none;
+}
+.main .content .game .rank {
+  float: left;
+}
+.main .content .layer {
+  width: 480px;
+  min-height: 300px;
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  left: 0;
+  border: 1px solid #f00;
+}
+.main .content .layer .rank {
+  float: left;
+  cursor: pointer;
+}
+.main .content .layer .empty {
+  background-color: #ffffff;
+  cursor: inherit;
+}
+.main .content .imgBox {
+  display: none;
+}
+.canvas {
+  width: 480px;
+  height: 300px;
+  display: none;
+}
